@@ -15,8 +15,8 @@ const AuthForm = ({ setToken }) => {
     e.preventDefault();
     try {
       const url = isSignup
-        ? "http://localhost:4000/api/influencer/signup"
-        : "http://localhost:4000/api/influencer/login";
+        ? "https://zoomaar.onrender.com/api/influencer/signup"
+        : "https://zoomaar.onrender.com/api/influencer/login";
 
       const { data } = await axios.post(url, formData, {
         headers: { "Content-Type": "application/json" },

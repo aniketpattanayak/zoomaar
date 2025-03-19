@@ -148,7 +148,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:4000");
+const socket = io("https://zoomaar.onrender.com");
 
 const Viewer = () => {
   const { userId } = useParams();

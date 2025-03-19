@@ -13,7 +13,7 @@ const LiveStreams = () => {
 
 useEffect(() => {
   if (!socketInstance) {
-    const socket = io("http://localhost:4000");
+    const socket = io("https://zoomaar.onrender.com");
     setSocketInstance(socket);
     console.log("🔵 WebSocket connected");
 

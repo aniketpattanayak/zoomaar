@@ -17,8 +17,8 @@ const SellerAuth = ({ setToken, setRole }) => {
     setLoading(true);
     try {
       const url = isSignup
-        ? "http://localhost:4000/api/seller/signup"
-        : "http://localhost:4000/api/seller/login";
+        ? "https://zoomaar.onrender.com/api/seller/signup"
+        : "https://zoomaar.onrender.com/api/seller/login";
 
       const { data } = await axios.post(url, formData, {
         headers: { "Content-Type": "application/json" },

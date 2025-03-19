@@ -18,8 +18,8 @@ const AuthForm = () => {
 
     try {
       const url = isSignup
-        ? "http://localhost:4000/api/admin/signup"
-        : "http://localhost:4000/api/admin/login";
+        ? "https://zoomaar.onrender.com/api/admin/signup"
+        : "https://zoomaar.onrender.com/api/admin/login";
 
       const { data } = await axios.post(url, formData, {
     

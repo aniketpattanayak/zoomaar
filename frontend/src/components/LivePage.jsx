@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import io from "socket.io-client";
 
-const socket = io("http://localhost:4000");
+const socket = io("https://zoomaar.onrender.com");
 
 const LivePage = () => {
   const { streamerId } = useParams();

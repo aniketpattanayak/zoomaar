@@ -19,7 +19,7 @@ const StoryFeed = () => {
   useEffect(() => {
     const fetchContent = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/content/");
+        const response = await axios.get("https://zoomaar.onrender.com/api/content/");
         setContentList(response.data);
       } catch (error) {
         console.error("Error fetching content:", error);

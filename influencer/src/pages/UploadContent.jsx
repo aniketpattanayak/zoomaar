@@ -52,7 +52,7 @@ const UploadContent = () => {
     formData.media.forEach((file) => data.append("media", file));
 
     try {
-      const response = await axios.post("http://localhost:4000/api/content/upload", data, {
+      const response = await axios.post("https://zoomaar.onrender.com/api/content/upload", data, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       console.log("Upload Success:", response.data);
